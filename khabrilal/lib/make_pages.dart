@@ -171,9 +171,9 @@ Route _createRoute1() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => Business(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
@@ -190,9 +190,9 @@ Route _createRoute() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => General(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
@@ -209,9 +209,9 @@ Route _createRoute3() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => Science(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
@@ -228,9 +228,9 @@ Route _createRoute4() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => Sports(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
@@ -247,9 +247,9 @@ Route _createRoute5() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => Health(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
@@ -266,9 +266,9 @@ Route _createRoute6() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => Entertaiment(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
@@ -285,9 +285,9 @@ Route _createRoute7() {
     transitionDuration: Duration(seconds: 2), //You can change the time here
     pageBuilder: (context, animation, secondaryAnimation) => Technologyy(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var begin = Offset(1.0, 0.0);
+      var begin = Offset(2.0, 6.0);
       var end = Offset.zero;
-      var curve = Curves.easeInCirc;
+      var curve = Curves.easeOutSine;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 
