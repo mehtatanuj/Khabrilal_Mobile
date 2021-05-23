@@ -22,7 +22,7 @@ class _HealthState extends State<Health> {
   // }
 
   final String url =
-      "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=66d32636865145ea86ee42e763afc5f8";
+      "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=66d32636865145ea86ee42e763afc5f8";
   List data;
   @override
   void initState() {
