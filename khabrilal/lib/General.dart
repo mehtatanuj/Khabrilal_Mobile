@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:url_launcher/url_launcher.dart';
+
 import 'routenavi.dart';
-import 'package:intl/intl.dart';
 
 // import 'package:simple_url_preview/simple_url_preview.dart';
 
@@ -89,7 +88,10 @@ class _GeneralState extends State<General> {
                           borderRadius: BorderRadius.circular(15),
                           child: Image(
                             fit: BoxFit.fitHeight,
-                            image: NetworkImage(data[index]['urlToImage']),
+                            image: NetworkImage(data[index]['urlToImage'] ==
+                                    null
+                                ? "https://previews.123rf.com/images/urfandadashov/urfandadashov1805/urfandadashov180500070/100957966-photo-not-available-icon-isolated-on-white-background-vector-illustration.jpg"
+                                : data[index]['urlToImage']),
                           ),
                         ),
                       ),
@@ -101,13 +103,17 @@ class _GeneralState extends State<General> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                data[index]['title'],
+                                data[index]['title'] == null
+                                    ? "I Think This is a Wrong News"
+                                    : data[index]['title'],
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
                                     fontSize: 14, fontWeight: FontWeight.bold),
                               ),
-                              Text(data[index]['publishedAt']),
+                              Text(data[index]['publishedAt'] == null
+                                  ? DateTime.now()
+                                  : data[index]['publishedAt']),
                             ],
                           ),
                         ),
